@@ -133,7 +133,7 @@ Implement implement operator
    >> --- Right shift
 ```
 
-## 3.Structure Control
+## 3.Control Structures
 
 #### if
 ```php
