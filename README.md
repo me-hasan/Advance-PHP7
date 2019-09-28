@@ -94,8 +94,6 @@ $a %= 4;
 
 ### Comparision Operator
 ```php
-
-
 echo $a == $b // 1 if it is true
   Identical comparision operator ===
   value same but type not equal !==
@@ -133,4 +131,130 @@ Implement implement operator
    ^  --- XOR
    << --- Left shift
    >> --- Right shift
+```
+
+### Structure Control
+
+#### if
+```php
+$a = 5;
+if(!$a){
+    echo "Yes";
+}else{
+    echo "No";
+} 
+echo "<br>";
+if($a){
+    echo "Yes";
+}else{
+    echo "No";
+}
+
+echo "<br>";
+echo "<br>";
+if($a == 1){
+    echo 1;
+}elseif($a == 2){
+    echo 2;
+} // if ba ifelse er jonno else mandatory na
+
+
+echo "<br>";
+echo "<br>";
+```
+#### Switch
+
+```PHP
+$switching = 10;
+switch($switching){
+    default:
+    echo "tai naki";
+    break;
+    case 10:
+    echo 10; 
+} 
+echo "<br>";
+echo "<br>";
+
+for($i = 1; $i<=10; ++$i){
+    echo $i, "<br>";
+} 
+
+```
+
+#### Do While
+```php
+$do = 11;
+do{
+    echo $do;
+} 
+while($i<=10);
+
+```
+#### for
+```php
+for($i = 1; $i<=10; ++$i){
+    if($i == 5){
+        break;
+    }
+    echo $i, "<br>";
+}  
+echo "<br>";
+echo "<br>";
+for($i = 1; $i<=10; ++$i){
+    echo $i, "<br>";
+    if($i == 5){
+        break;
+    }
+}  
+echo "<br>";
+echo "<br>";
+for($i = 1; $i<=10; ++$i){
+    if($i == 5){
+        continue;
+    }
+    echo $i, "<br>";
+}  
+
+echo "<br>";
+echo "<br>"; 
+
+for($i = 1; $i<=10; ++$i){
+    if($i == 5 || $i == 7){
+        continue;
+    }
+    echo $i, "<br>";
+}  
+
+echo "<br>";
+echo "<br>";
+
+goto a;
+echo "Foo";
+for($i = 1; $i<=10; ++$i){
+    if($i == 5 || $i == 7){
+        continue;
+    }
+    echo $i, "<br>";
+} 
+
+a:
+echo "bar";
+
+
+for($i=0, $j=50; $i<100; $i++){
+    while($j--){
+        if($j == 30) goto end;
+    }
+}
+echo "i = $i";
+end:
+echo "J hit $j"; 
+
+
+
+echo "<br>";
+echo "<br>";
+echo rand(100,1000);
+
 ```
