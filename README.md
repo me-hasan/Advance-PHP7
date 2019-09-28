@@ -1,14 +1,12 @@
 # Advance PHP 7
 
 ## 1.Variable
-
-### Constant Variable
+#### Constant Variable
 
 ```php
 define ('a','american'); Constant has global scope;
 Note : from php 5.6 const allow arithmatic calculation.
-```
-### Variable variable 
+```#### Variable variable 
 ```php
 $a = 'America';
 $$a = 'Australia';
@@ -25,8 +23,7 @@ echo $Australia;
 // echo '<br/>';
 // echo "the size of $city is $Dhaka";
 ```
-
-### Reference variable
+#### Reference variable
 
 ```php
 // $c = 'canada';
@@ -44,8 +41,7 @@ echo $Australia;
 // test($y);
 // echo $y;
 ```
-
-### Variable scope
+#### Variable scope
 ```PHP
 // $a = 5;
 // function test ()
@@ -76,8 +72,7 @@ echo $Australia;
 #
 
 ## 2.Operator
-
-### Assignment operator
+#### Assignment operator
 ```php
 $a = $a +7;
 $a += 4;
@@ -86,13 +81,11 @@ $a *= 4;
 $a /= 4;
 $a %= 4;
 ```
-
-### Arithmetic Operator
+#### Arithmetic Operator
 ```php
 + - % *
 ```
-
-### Comparision Operator
+#### Comparision Operator
 ```php
 echo $a == $b // 1 if it is true
   Identical comparision operator ===
@@ -108,16 +101,14 @@ echo $a == $b // 1 if it is true
      $a<=>$c // -1
      $c<=>$a // 1l
 ```
-
-### String operator
+#### String operator
 ```php
 $a .= 'Bangladesh';
 
 Implement implement operator
 	post implement++, pre implement --
 ```
-
-### Bitwise operator  	
+#### Bitwise operator  	
 ```php
    5&1 // first convert 5 into binary then it will check condition.....
 
@@ -261,7 +252,7 @@ echo rand(100,1000);
 
 #
 ## 4.Function
-### It get all args as array
+#### It get all args as array
 ```php
 // function test(){
 //     $args = func_get_args(); // It get all args as array... by function
@@ -272,7 +263,7 @@ echo rand(100,1000);
 
 
 ```
-### Expect array type parameter
+#### Expect array type parameter
 ```PHP
 // function test(...$arg){
 //     // It get all args as array... 
@@ -281,16 +272,14 @@ echo rand(100,1000);
 // echo '<pre>';
 // test(5,2,5);
 
-```
-### It pass array to function
+```#### It pass array to function
 ```PHP
 // function test($a, $b, $c, $d){
 //     echo $b;
 // }
 // $param = [5,4,3,2,1,0];
 // test(...$param);
-```
-### Function within Function
+```#### Function within Function
 ```PHP
 // function foo(){
 //     function bar(){
@@ -301,7 +290,7 @@ echo rand(100,1000);
 // echo foo();
 // echo bar();
 ```
-### Conditional function
+#### Conditional function
 ```PHP
 // $makefoo = true;
 // if($makefoo){
@@ -311,7 +300,7 @@ echo rand(100,1000);
 // }
 // echo foo();
 ```
-### Recursive function
+#### Recursive function
 ```PHP
 //Recursive function
 // function calcfact($num){
@@ -325,9 +314,7 @@ echo rand(100,1000);
 // }
 // echo calcfact(4);
 
-```
 
-```php
 // function x(){
 //     echo 5;
 // }
