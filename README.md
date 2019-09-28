@@ -327,3 +327,101 @@ echo rand(100,1000);
 
 ```
 
+```php
+// function x(){
+//     echo 5;
+// }
+
+// function y(){
+//     echo 7;
+// }
+
+// echo x()+y();
+
+```
+#### Strict type
+```php
+
+//declare(strict_types = 1);
+
+// function test(int $u){ //receive result with type 
+//     return $u;
+// }
+
+// echo test(5);
+
+// function test(array $u){
+//     echo '<pre>';
+//     print_r($u);
+// }
+
+//  test([1,4,32]);
+
+
+// function test():float{ // return result with type
+//     return 5+1.2;
+// }
+// echo test();
+
+```
+#### Variable function
+```php
+// function sum ($x, $y){
+//     return $x+$y;
+// }
+// $x = 'sum';
+// echo $x(7,5);
+
+```
+#### Anonymous function
+```php
+// $test = [
+// function  (){
+//     return 5;
+//     },
+
+// function (){
+//     return 6;
+//     }
+// ];
+
+// echo $test[0]();
+// echo $test[1]();
+
+
+// $makegreeting = function($name, $timeOfDay){
+//     return "$timeOfDay $name";
+// };
+
+// echo $makegreeting("Khayrul", "Good Morning,");
+
+```
+#### LAMDA FUNCTION 
+```php
+// If a function take a annonymous function as (parametter or args) IT"S CALL LAMDA FUNCTION
+// function test($a){
+//     return $a();
+// }
+// echo test(function(){return "Hello world";});
+```
+#### Closures Function 
+```php
+// $student = "Khayrul";
+// $output = function() use($student){
+//     return "Welcome $student";
+// };
+// echo $output();
+
+function myClosure($num){
+    return function ($x) use ($num){
+        return $num*$x;
+    };
+}
+
+$clouse = myClosure(10);
+echo $clouse(2)."<br/>";
+echo $clouse(3)."<br/>";
+echo $clouse(5)."<br/>";
+
+```
+
