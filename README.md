@@ -1,6 +1,6 @@
 # Advance PHP 7
 
-## ***Variable
+## 1.Variable
 
 ### Constant Variable
 
@@ -75,7 +75,7 @@ echo $Australia;
 
 #
 
-## ***Operator
+## 2.Operator
 
 ### Assignment operator
 ```php
@@ -133,7 +133,7 @@ Implement implement operator
    >> --- Right shift
 ```
 
-### Structure Control
+## 3.Structure Control
 
 #### if
 ```php
@@ -260,7 +260,7 @@ echo rand(100,1000);
 ```
 
 #
-## Function
+## 4.Function
 ### It get all args as array
 ```php
 // function test(){
