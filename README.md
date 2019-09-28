@@ -258,3 +258,72 @@ echo "<br>";
 echo rand(100,1000);
 
 ```
+
+#
+## Function
+### It get all args as array
+```php
+// function test(){
+//     $args = func_get_args(); // It get all args as array... by function
+//     print_r($args);
+// }
+// echo '<pre>';
+// test(5,2,5);
+
+
+```
+### Expect array type parameter
+```PHP
+// function test(...$arg){
+//     // It get all args as array... 
+//     print_r($arg);
+// }
+// echo '<pre>';
+// test(5,2,5);
+
+```
+### It pass array to function
+```PHP
+// function test($a, $b, $c, $d){
+//     echo $b;
+// }
+// $param = [5,4,3,2,1,0];
+// test(...$param);
+```
+### Function within Function
+```PHP
+// function foo(){
+//     function bar(){
+//         return "<br/>bar";
+//     }
+//     return 'hello';
+// }
+// echo foo();
+// echo bar();
+```
+### Conditional function
+```PHP
+// $makefoo = true;
+// if($makefoo){
+//     function foo(){
+//         return 'foo';
+//     }
+// }
+// echo foo();
+```
+### Recursive function
+```PHP
+//Recursive function
+// function calcfact($num){
+//     static $product = 1;
+//     if($num>1){
+//         $product *= $num;
+//         $num--;
+//         calcfact($num);
+//     }
+//     return $product;
+// }
+// echo calcfact(4);
+
+```
+
