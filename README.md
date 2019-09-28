@@ -2,7 +2,7 @@
 
 ## ***Variable
 
-### Variable make by Constant method instead of const keyword.
+### Constant Variable
 
 ```php
 define ('a','american'); Constant has global scope;
