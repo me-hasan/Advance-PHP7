@@ -1625,6 +1625,9 @@ $option = ['cost'=>20];
 echo password_hash('12233', PASSWORD_BCRYPT, $option);
 ```
 
+##### Encoding and decoding 
+
+
 ```php
 <?php
 /*
