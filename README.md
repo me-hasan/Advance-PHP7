@@ -1625,6 +1625,71 @@ $option = ['cost'=>20];
 echo password_hash('12233', PASSWORD_BCRYPT, $option);
 ```
 
+```php
+<?php
+/*
+|---------------------------------------------------
+| PHP String Class - 02
+|---------------------------------------------------
+
+1. diff freze -> all deleted after restart pc
+2. extension=php_openssl.dll eta active thakte hobe. means er age semi clone thaka jabe na.
+3. caesar cipher algorithm
+
+*/
+
+echo "<pre>";
+//print_r(openssl_get_cipher_methods());
+
+$str = "I love PHP";
+$cipher = "aes-128-gcm";
+//$cipher = "AES-128-XTS";
+$lenth = openssl_cipher_iv_length($cipher);
+echo $lenth;
+echo "<br>";
+$randByte = openssl_random_pseudo_bytes($lenth);
+echo $randByte;
+echo "<br>";
+$key = "w3";
+$cipherText = openssl_encrypt($str, $cipher, $key, $options = "0", $randByte, $tag);
+echo $cipherText;
+echo "<br>";
+
+echo $original_text = openssl_decrypt($cipherText, $cipher, $key, $options="0", $randByte, $tag);
+
+echo "<br>";
+echo "<br>";
+
+/*
+|---------------------------------------------------
+| Encoding decoding in PHP
+|---------------------------------------------------
+
+1. Blob
+
+*/
+
+$bas64 = base64_encode($str);
+echo base64_decode($bas64);
+
+echo "<br>";
+$img = "legendit.jpg";
+$type = mime_content_type($img);
+//echo file_get_contents($img);
+//echo base64_encode(file_get_contents($img));
+$encode_img =  base64_encode(file_get_contents($img));
+//echo base64_decode($encode_img);
+$src = 'data: '.$type.';base64,'.$encode_img;
+
+//echo $src;
+
+//echo "<img src='". $src ."'>";
+
+echo convert_uuencode("Hello mr. Habib Khan"); // another encoding system
+echo "<br>";
+echo convert_uudecode(convert_uuencode("Hello world"));
+```
+
 
 
 
