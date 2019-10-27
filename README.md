@@ -924,61 +924,79 @@ print_r(array_diff_key($array_1,$array_2)); // je key gulu pawa jabe na 2nd para
 
 
 #####Class − 
+
 classes contain the data members and member functions
 
 #####Object − 
+
 instances of classes
 
 #####Member Variable − 
+
 These are the variables defined inside a class. 
 
 #####Member function − 
+
 These are the function defined inside a class and are used to access object data.
 
 #####Inheritance − 
+
 Child class will inherit all or few member functions and variables of a parent class.
 
 #####Parent class − 
+
 A class that is inherited from by another class. This is also called a base class or super class.
 
 #####Child Class − 
+
 A class that inherits from another class. This is also called a subclass or derived class.
 
 #####Final Class - 
+
 Whom no class can not inherit from other class.
 
 #####Polymorphism − 
+
 Function name will remain same but it take different number of arguments and can do different task.
 
 #####Data Abstraction − 
+
 Any representation of data in which the implementation details are hidden (abstracted).
 
 #####Encapsulation − 
+
 Encapsulation is an Object Oriented Programming concept that binds together the data and functions that manipulate the data, and that keeps both safe from outside interference and misuse
 
 #####Constructor − 
+
 Constructor is involved when object are Created
 
 #####Destructor − 
+
 Destructor is involved when object are deleted.
 
 #####Traits
+
 Traits are a mechanism for code reuse in single inheritance languages such as PHP.
 
 #####Access privilage/visibilty of Class method and property
+
 -Public
 - Protected (Class and his child class will be able to use this)
 - Private (Only for own use)
 
 #####:: Scope Resolution
+
 When we access  static property and constant then we have to use Scope Resolution.
 - outside of class [ClassName::property]
 - inside of class [self::property]
 
 #####Object Handler 
+
 The variable that the object is placed in is called the object handler
 
 #####Rule of OOP
+
 - Is not mandatory give parentheses [()] end of the class 
 - You do not have to give $ when using a class property
 
@@ -1008,6 +1026,7 @@ echo $test_obj->getvalue();
 ```
 
 #####Chain method 
+
 ```php
 class Person {
     private $name;
@@ -1036,6 +1055,7 @@ echo $obj->setName('Khayrul')->setAge(27)->getInfo();
 ```
 
 #####Magic method
+
 ```php
 class Person {
     private $name;
@@ -1070,6 +1090,7 @@ $obj->getInfo();
 ```
 
 #####BD Connection
+
 ```php
 class Db{
 
@@ -1340,7 +1361,8 @@ echo '<pre>';
 print_r($obj1);
 ```
 
-#####Serialize Object
+##### Serialize Object
+
 - Serialize : The process of converting a object to specific formatted string is called object serialized.
 - Un serialize : The process of converting a specific formatted to object is called un serialized.
 ```php
