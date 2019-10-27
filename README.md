@@ -985,7 +985,7 @@ Traits are a mechanism for code reuse in single inheritance languages such as PH
 - Protected (Class and his child class will be able to use this)
 - Private (Only for own use)
 
-#####:: Scope Resolution
+##### :: Scope Resolution
 
 When we access  static property and constant then we have to use Scope Resolution.
 - outside of class [ClassName::property]
@@ -1025,7 +1025,7 @@ $test_obj->setvalue(10);
 echo $test_obj->getvalue();
 ```
 
-#####Chain method 
+##### Chain method 
 
 ```php
 class Person {
@@ -1054,7 +1054,7 @@ $obj = new Person;
 echo $obj->setName('Khayrul')->setAge(27)->getInfo();
 ```
 
-#####Magic method
+##### Magic method
 
 ```php
 class Person {
@@ -1089,7 +1089,7 @@ $obj = new Person('Khayrul',32);
 $obj->getInfo();
 ```
 
-#####BD Connection
+##### BD Connection
 
 ```php
 class Db{
@@ -1198,7 +1198,7 @@ $obj = new MyClass;
 echo $obj->amethod('Khayrul');
 ```
 
-#####Method Over Loading 
+##### Method Over Loading 
 ```php
 class MethodOverLoading{
     public function __call($methodName, $params){
