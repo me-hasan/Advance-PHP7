@@ -1305,7 +1305,7 @@ echo $obj1->booksName, '</br>';
 
 ```
 
-#####Clone 
+##### Clone 
 
 ```php
 class coppy{
