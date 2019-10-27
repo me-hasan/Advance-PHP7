@@ -1262,7 +1262,8 @@ function pr($d){
 
 ```
 
-#####Autoload
+##### Autoload
+
 ```php
 
 class Books{
@@ -1305,6 +1306,7 @@ echo $obj1->booksName, '</br>';
 ```
 
 #####Clone 
+
 ```php
 class coppy{
 
